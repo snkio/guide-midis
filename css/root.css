@@ -1,0 +1,32 @@
+:root {
+  --main-line-height: 1.5;
+  --h-line-height: 1.2;
+  --text-black: #303030;
+  --text-white: #fffafa;
+
+  --bg-header: rgba(204, 204, 204, 0.8);
+  --bg-orange: #fc4c00;
+  --bg-orange-hover: #e04300;
+  --bg-brown: #ca470e;
+  --bg-brown-hover: #e65213;
+
+  --fz-main: 1rem;
+  --fz-h1: 2.5rem;
+  --fz-h2: 2rem;
+  --fz-card: 1.5rem;
+
+  --ff-main: "Montserrat", sans-serif;
+  --ff-other: "Unbounded", sans-serif;
+
+  --fz-400: 400; /* Regular */
+  --fz-500: 500; /* Medium */
+  --fz-600: 600; /* Semi-bold */
+  --fz-700: 700; /* Bold */
+
+  --br40: 40%;
+  --br80: 80%;
+
+  --padding-mini-card: 3.5rem;
+  --margin-normal: 2rem;
+  --margin-standart: 3rem;
+}

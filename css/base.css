@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-main);
+  line-height: var(--main-line-height);
+  color: var(--text-black);
+}
+
+p,
+ol,
+ul,
+li {
+  font-size: var(--fz-main);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: var(--fz-h1);
+}
+
+h2 {
+  font-size: var(--fz-h2);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: var(--h-line-height);
+}

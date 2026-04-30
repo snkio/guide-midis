@@ -1,69 +1,6 @@
+@import "./root.css";
+@import "./base.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap");
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --main-line-height: 1.5;
-  --h-line-height: 1.2;
-  --text-black: #303030;
-  --text-white: #fffafa;
-
-  --bg-header: rgba(204, 204, 204, 0.8);
-
-  --fz-main: 1rem;
-  --fz-h1: 2.5rem;
-  --fz-h2: 2rem;
-
-  --ff-main: "Montserrat", sans-serif;
-  --ff-other: "Unbounded", sans-serif;
-
-  --fz-400: 400;
-  --fz-500: 500;
-  --fz-600: 600;
-  --fz-700: 700;
-}
-
-p,
-ol,
-ul,
-li {
-  font-size: var(--fz-main);
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-h1 {
-  font-size: var(--fz-h1);
-}
-
-h2 {
-  font-size: var(--fz-h2);
-}
-
-h1,
-h2,
-h3,
-h4 {
-  line-height: var(--h-line-height);
-}
-
-body {
-  font-family: var(--ff-main);
-  line-height: var(--main-line-height);
-  color: var(--text-black);
-}
 
 .container {
   max-width: 1440px;
@@ -75,6 +12,7 @@ body {
   padding-block: 2.5rem;
   position: fixed;
   width: 100%;
+  z-index: 52;
 }
 
 .header__container {
@@ -127,8 +65,18 @@ body {
   width: 100%;
 }
 
-.main {
+.hero {
+  display: flex;
+  align-items: center;
   padding-top: 128px;
+  position: relative;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4)),
+    url("../assets/images/changeit!!!.jpg") center / cover no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .hero__info {
@@ -136,9 +84,60 @@ body {
   background: rgba(228, 228, 228, 0.8);
   padding: 35px;
   border-radius: 20px;
+  font-family: var(--ff-other);
 }
 
 .hero__title {
   margin-bottom: 35px;
   text-transform: uppercase;
+}
+
+.orange {
+  background: var(--bg-orange);
+}
+
+.brown {
+  background: var(--bg-brown);
+}
+
+.start__title {
+  margin-top: var(--margin-normal);
+  margin-bottom: var(--margin-standart);
+  display: flex;
+  justify-content: center;
+}
+
+.start__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.start__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: var(--fz-card);
+  color: var(--text-white);
+  font-weight: var(--fz-600);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  padding: var(--padding-mini-card);
+  border-radius: 10px;
+  box-shadow: 0 5px 5px var(--text-black);
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+}
+
+.start__card:hover {
+  transform: scale(1.1);
+}
+
+.start__img {
+  margin-bottom: 10px;
+  filter: invert(1);
 }
