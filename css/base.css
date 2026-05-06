@@ -35,6 +35,10 @@ h2 {
   font-size: var(--fz-h2);
 }
 
+h3 {
+  font-size: var(--fz-h3);
+}
+
 h1,
 h2,
 h3,

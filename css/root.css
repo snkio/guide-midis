@@ -9,11 +9,12 @@
   --bg-orange-hover: #e04300;
   --bg-brown: #ca470e;
   --bg-brown-hover: #e65213;
+  --bg-cards: #fd9040;
 
   --fz-main: 1rem;
   --fz-h1: 2.5rem;
   --fz-h2: 2rem;
-  --fz-card: 1.5rem;
+  --fz-h3: 1.5rem --fz-card: 1.5rem;
 
   --ff-main: "Montserrat", sans-serif;
   --ff-other: "Unbounded", sans-serif;
