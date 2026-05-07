@@ -245,3 +245,19 @@
 .footer__link:hover::after {
   width: 100%;
 }
+
+/* =============== */
+
+.breadcrumbs {
+  margin-top: 100px;
+}
+
+.breadcrumbs li a {
+  color: var(--bg-orange);
+  font-weight: var(--fz-500);
+}
+
+.breadcrumbs__list {
+  display: flex;
+  gap: 5px;
+}
