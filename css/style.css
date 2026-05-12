@@ -265,7 +265,8 @@
 .info__info {
   font-weight: var(--fz-400);
   max-width: 800px;
-  margin-bottom: var(--margin-standart)
+  margin-top: var(--margin-normal);
+  margin-bottom: var(--margin-standart);
 }
 
 .first__elem {
@@ -274,7 +275,7 @@
 
   padding-left: 15px;
   padding-block: var(--padding-default);
-  border-block: 1px solid #D9D9D9;
+  border-block: 1px solid #d9d9d9;
   margin-bottom: 15px;
 }
 
@@ -314,6 +315,3 @@
   border-radius: 15px;
   padding: var(--padding-schedule);
 }
-
-
-
