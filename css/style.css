@@ -67,7 +67,6 @@
 
 .hero {
   position: relative;
-  padding-top: 128px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../assets/images/changeit!!!.jpg") center / cover no-repeat;
@@ -246,7 +245,7 @@
   width: 100%;
 }
 
-/* =============== */
+/* FIRST DAYS */
 
 .breadcrumbs {
   margin-top: 100px;
@@ -260,4 +259,61 @@
 .breadcrumbs__list {
   display: flex;
   gap: 5px;
+  margin-bottom: var(--margin-normal);
 }
+
+.info__info {
+  font-weight: var(--fz-400);
+  max-width: 800px;
+  margin-bottom: var(--margin-standart)
+}
+
+.first__elem {
+  display: flex;
+  align-items: center;
+
+  padding-left: 15px;
+  padding-block: var(--padding-default);
+  border-block: 1px solid #D9D9D9;
+  margin-bottom: 15px;
+}
+
+.first__nav {
+  display: flex;
+  align-items: center;
+}
+
+.first__arrow {
+  margin-left: auto;
+  padding-right: 15px;
+  width: 50px;
+}
+
+.first__nav {
+  margin-left: auto;
+}
+
+/* =========== */
+
+/* SCHEDULE */
+
+.schedule__title {
+  margin-bottom: var(--margin-normal);
+}
+
+.schedule__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.schedule__btn {
+  background: var(--bg-orange);
+  color: var(--text-black);
+  border-radius: 15px;
+  padding: var(--padding-schedule);
+}
+
+
+
