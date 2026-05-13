@@ -22,10 +22,10 @@
   --ff-main: "Montserrat", sans-serif;
   --ff-other: "Unbounded", sans-serif;
 
-  --fz-400: 400; /* Regular */
-  --fz-500: 500; /* Medium */
-  --fz-600: 600; /* Semi-bold */
-  --fz-700: 700; /* Bold */
+  --fz-regular: 400; /* Regular */
+  --fz-medium: 500; /* Medium */
+  --fz-semibold: 600; /* Semi-bold */
+  --fz-bold: 700; /* Bold */
 
   --br40: 40%;
   --br80: 80%;
