@@ -29,14 +29,14 @@
 }
 
 .header__logo-text {
-  font-weight: var(--fz-semibold);
+  font-weight: var(--fw-semibold);
 }
 
 .header__list {
   display: flex;
   margin-left: auto;
   gap: 15px;
-  font-weight: var(--fz-semibold);
+  font-weight: var(--fw-semibold);
 }
 
 .header__link {
@@ -112,9 +112,9 @@
 }
 
 .start__title {
-  font-weight: var(--fz-regular);
+  font-weight: var(--fw-regular);
   margin-top: var(--margin-normal);
-  margin-bottom: var(--margin-standart);
+  margin-bottom: var(--margin-standard);
   display: flex;
   justify-content: center;
 }
@@ -133,7 +133,7 @@
   flex-direction: column;
   font-size: var(--fz-card);
   color: var(--text-white);
-  font-weight: var(--fz-semibold);
+  font-weight: var(--fw-semibold);
   text-align: center;
   width: 100%;
   max-width: 300px;
@@ -154,7 +154,7 @@
 }
 
 .learn__title {
-  font-weight: var(--fz-regular);
+  font-weight: var(--fw-regular);
   text-align: center;
   margin-block: var(--margin-normal);
 }
@@ -180,7 +180,7 @@
 }
 
 .learn__text {
-  font-weight: var(--fz-medium);
+  font-weight: var(--fw-medium);
   text-transform: uppercase;
   position: absolute;
   bottom: 20px;
@@ -191,7 +191,7 @@
 }
 
 .faq__title {
-  font-weight: var(--fz-regular);
+  font-weight: var(--fw-regular);
   text-align: center;
 }
 
@@ -228,7 +228,7 @@
 }
 
 .footer__logo-text {
-  font-weight: var(--fz-semibold);
+  font-weight: var(--fw-semibold);
 }
 
 .footer__authors {
@@ -236,7 +236,7 @@
 }
 
 .footer__authors span {
-  font-weight: var(--fz-bold);
+  font-weight: var(--fw-bold);
   color: var(--bg-orange);
 }
 
@@ -245,7 +245,7 @@
 }
 
 .footer__teacher span {
-  font-weight: var(--fz-bold);
+  font-weight: var(--fw-bold);
   color: var(--bg-orange);
 }
 
@@ -257,7 +257,7 @@
 
 .breadcrumbs li a {
   color: var(--bg-orange);
-  font-weight: var(--fz-medium);
+  font-weight: var(--fw-medium);
 }
 
 .breadcrumbs__list {
@@ -267,10 +267,10 @@
 }
 
 .info__info {
-  font-weight: var(--fz-regular);
+  font-size: var(--fz-subtitle);
   max-width: 800px;
   margin-top: var(--margin-normal);
-  margin-bottom: var(--margin-standart);
+  margin-bottom: var(--margin-standard);
 }
 
 .first__elem {
@@ -322,19 +322,60 @@
 .schedule__btns {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .schedule__btn {
-  font-size: var(--fz-h3);
+  font-size: var(--fz-subtitle);
   padding: var(--padding-schedule);
   color: var(--text-black);
   text-align: center;
-  min-width: 400px;
+  max-width: 400px;
+  width: 100%;
   border-radius: 15px;
+  box-shadow: 0 5px 5px rgba(48, 48, 48, 0.4);
   transform: scale(1);
   transition: transform 0.3s ease-out;
 }
 
 .schedule__btn:hover {
   transform: scale(1.1);
+}
+
+.schedule__time-img {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.schedule__info {
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+  font-weight: var(--fw-semibold);
+}
+
+.schedule__time {
+  margin-block: var(--margin-small);
+}
+
+.schedule__time span,
+.schedule__important {
+  color: var(--bg-orange);
+}
+
+.schedule__flex {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.schedule__text {
+  margin: 0 auto;
+  margin-top: var(--margin-small);
+  font-weight: var(--fw-semibold);
+  max-width: 650px;
+  text-align: center;
 }

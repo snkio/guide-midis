@@ -14,6 +14,7 @@
   --bg-gray: #d9d9d9;
 
   --fz-main: 1rem;
+  --fz-subtitle: 1.25rem;
   --fz-h1: 2.5rem;
   --fz-h2: 1.5rem;
   --fz-h3: 1.25rem;
@@ -22,10 +23,10 @@
   --ff-main: "Montserrat", sans-serif;
   --ff-other: "Unbounded", sans-serif;
 
-  --fz-regular: 400; /* Regular */
-  --fz-medium: 500; /* Medium */
-  --fz-semibold: 600; /* Semi-bold */
-  --fz-bold: 700; /* Bold */
+  --fw-regular: 400; /* Regular */
+  --fw-medium: 500; /* Medium */
+  --fw-semibold: 600; /* Semi-bold */
+  --fw-bold: 700; /* Bold */
 
   --br40: 40%;
   --br80: 80%;
@@ -33,6 +34,7 @@
   --padding-default: 1.5rem;
   --padding-schedule: 2rem;
   --padding-mini-card: 3.5rem;
+  --margin-small: 1rem;
   --margin-normal: 2rem;
-  --margin-standart: 3rem;
+  --margin-standard: 3rem;
 }
