@@ -68,14 +68,10 @@
 
 .hero {
   position: relative;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../assets/images/changeit!!!.jpg") center / cover no-repeat;
   min-height: 100vh;
   width: 100%;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
   display: flex;
+  border-bottom: 2px solid var(--bg-gray);
 }
 
 .hero__container {
@@ -101,6 +97,48 @@
 
 .hero__subtitle {
   font-size: var(--fz-h2);
+}
+
+.hero__mascot {
+  position: absolute;
+  bottom: 0;
+  right: 300px;
+}
+
+.hero__circlebig {
+  position: absolute;
+  content: "";
+  width: 350px;
+  height: 120px;
+  background: var(--bg-gray);
+  border-radius: 50%;
+  bottom: 30px;
+  right: 320px;
+  z-index: -1;
+}
+
+.hero__circles1 {
+  position: absolute;
+  bottom: 100px;
+  right: 50%;
+}
+
+.hero__blot1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hero__blot2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.hero__blot3 {
+  position: absolute;
+  right: 650px;
+  bottom: 150px;
 }
 
 .orange {
@@ -177,9 +215,11 @@
   max-height: 400px;
   border-radius: 40px;
   filter: brightness(0.9);
+  box-shadow: 0 5px 5px rgba(48, 48, 48, 0.4);
 }
 
 .learn__text {
+  color: var(--text-black);
   font-weight: var(--fw-medium);
   text-transform: uppercase;
   position: absolute;
@@ -271,6 +311,11 @@
   max-width: 800px;
   margin-top: var(--margin-normal);
   margin-bottom: var(--margin-standard);
+}
+
+.info__elem {
+  font-size: var(--fz-subtitle);
+  list-style: inside;
 }
 
 .first__elem {
@@ -378,4 +423,23 @@
   font-weight: var(--fw-semibold);
   max-width: 650px;
   text-align: center;
+}
+
+/* INSTITUTE */
+
+.institute__title {
+  margin-bottom: var(--margin-normal);
+}
+
+.institute__info {
+  font-size: var(--fz-subtitle);
+}
+
+.institute__job,
+.institute__name {
+  font-size: var(--fz-subtitle);
+}
+
+.institute__name {
+  margin-bottom: var(--margin-normal);
 }
