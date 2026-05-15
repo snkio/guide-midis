@@ -76,7 +76,7 @@
 
 .hero__container {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
 }
@@ -100,20 +100,19 @@
 }
 
 .hero__mascot {
-  position: absolute;
-  bottom: 0;
-  right: 300px;
+  position: relative;
+  margin-left: 200px;
 }
 
-.hero__circlebig {
+.hero__mascot::before {
   position: absolute;
   content: "";
   width: 350px;
   height: 120px;
   background: var(--bg-gray);
   border-radius: 50%;
-  bottom: 30px;
-  right: 320px;
+  left: 20px;
+  bottom: 20px;
   z-index: -1;
 }
 
@@ -137,8 +136,8 @@
 
 .hero__blot3 {
   position: absolute;
-  right: 650px;
-  bottom: 150px;
+  right: 40%;
+  bottom: 30%;
 }
 
 .orange {
@@ -150,9 +149,7 @@
 }
 
 .start__title {
-  font-weight: var(--fw-regular);
-  margin-top: var(--margin-normal);
-  margin-bottom: var(--margin-standard);
+  margin-block: var(--margin-standard);
   display: flex;
   justify-content: center;
 }
@@ -192,16 +189,14 @@
 }
 
 .learn__title {
-  font-weight: var(--fw-regular);
   text-align: center;
-  margin-block: var(--margin-normal);
+  margin-block: var(--margin-standard);
 }
 
 .learn__list {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
-  margin-bottom: var(--margin-normal);
 }
 
 .learn__element {
@@ -231,7 +226,7 @@
 }
 
 .faq__title {
-  font-weight: var(--fw-regular);
+  margin-block: var(--margin-standard);
   text-align: center;
 }
 
@@ -248,7 +243,9 @@
 }
 
 .footer {
+  background: var(--bg-header);
   padding-block: 2.5rem;
+  margin-top: var(--margin-standard);
   width: 100%;
   z-index: 52;
 }
