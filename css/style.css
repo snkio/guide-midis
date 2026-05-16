@@ -200,17 +200,26 @@
 }
 
 .learn__element {
+  display: block;
+  overflow: hidden;
   position: relative;
   border-radius: 40px;
 }
 
 .learn__img {
+  display: block;
   width: 100%;
   max-width: 700px;
   max-height: 400px;
   border-radius: 40px;
   filter: brightness(0.9);
   box-shadow: 0 5px 5px rgba(48, 48, 48, 0.4);
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+}
+
+.learn__element:hover .learn__img {
+  transform: scale(1.04);
 }
 
 .learn__text {
@@ -305,7 +314,7 @@
 
 .info__info {
   font-size: var(--fz-subtitle);
-  max-width: 800px;
+  max-width: 850px;
   margin-top: var(--margin-normal);
   margin-bottom: var(--margin-standard);
 }
