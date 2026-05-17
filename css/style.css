@@ -362,8 +362,8 @@
 }
 
 .schedule__elem {
-  border-bottom: 1px solid var(--bg-gray);
-  padding-block: 40px;
+  border-bottom: 2px solid var(--bg-gray);
+  padding-block: 2.5rem;
 }
 
 .schedule__title {
@@ -448,4 +448,25 @@
 
 .institute__name {
   margin-bottom: var(--margin-normal);
+}
+
+/* RULES */
+
+.rules__title {
+  margin-bottom: var(--margin-normal);
+}
+
+.rules__elem {
+  padding-block: 2.5rem;
+  border-bottom: 2px solid var(--bg-gray);
+}
+
+.rules__lielem {
+  margin-bottom: var(--margin-small);
+  list-style: inside;
+}
+
+.rules__important {
+  color: var(--bg-orange);
+  font-weight: var(--fw-bold);
 }
