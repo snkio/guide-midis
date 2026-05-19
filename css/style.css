@@ -529,7 +529,6 @@
   padding: 2.5rem;
   max-width: 1200px;
   border-radius: 15px;
-  text-align: center;
   background: var(--bg-gray);
 }
 
@@ -540,4 +539,32 @@
 .info__faq span {
   color: red;
   font-weight: var(--fw-semibold);
+}
+
+.info__faq svg {
+  position: absolute;
+  right: 30px;
+}
+
+.info__desc-none {
+  margin: 0;
+  text-align: start;
+}
+
+.info__flex {
+  display: flex;
+}
+
+.info__flex img {
+  border-radius: 15px;
+  margin-right: var(--margin-normal);
+}
+
+.info__title-reset {
+  margin: 0;
+}
+
+.info__name {
+  font-size: var(--fz-h2);
+  margin-bottom: var(--margin-standard);
 }
