@@ -314,7 +314,7 @@
 
 .intro__desc {
   font-size: var(--fz-subtitle);
-  max-width: 850px;
+  max-width: 1200px;
   margin-block: var(--margin-small);
 }
 
@@ -560,11 +560,15 @@
   margin-right: var(--margin-normal);
 }
 
-.info__title-reset {
+.info__reset {
   margin: 0;
 }
 
 .info__name {
   font-size: var(--fz-h2);
   margin-bottom: var(--margin-standard);
+}
+
+.info__elem ul li {
+  list-style: inside;
 }
