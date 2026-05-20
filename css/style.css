@@ -1,6 +1,58 @@
 @import "./root.css";
 @import "./base.css";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap");
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/montserrat-v31-cyrillic_latin-regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/montserrat-v31-cyrillic_latin-500.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/montserrat-v31-cyrillic_latin-600.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/montserrat-v31-cyrillic_latin-700.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Tektur";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/tektur-v6-cyrillic_latin-regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Tektur";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/tektur-v6-cyrillic_latin-600.woff2") format("woff2");
+}
 
 .container {
   max-width: 1440px;
@@ -184,6 +236,7 @@
 }
 
 .start__img {
+  width: 150px;
   margin-bottom: 10px;
   filter: invert(1);
 }
@@ -204,6 +257,7 @@
   overflow: hidden;
   position: relative;
   border-radius: 40px;
+  box-shadow: 0 5px 5px rgba(48, 48, 48, 0.4);
 }
 
 .learn__img {
@@ -213,7 +267,6 @@
   max-height: 400px;
   border-radius: 40px;
   filter: brightness(0.9);
-  box-shadow: 0 5px 5px rgba(48, 48, 48, 0.4);
   transform: scale(1);
   transition: transform 0.3s ease-out;
 }
@@ -240,15 +293,46 @@
 }
 
 .faq__elem {
-  display: flex;
-  align-items: center;
   border-bottom: 2px solid var(--bg-gray);
-  padding-block: 20px;
+  padding-block: 1.25rem;
 }
 
-.faq__elem img {
-  margin-left: auto;
+.faq__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq__info {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  opacity: 0;
+  transition:
+    max-height 0.3s ease-out,
+    margin-top 0.3s ease-out,
+    opacity 0.3s ease-out;
+}
+
+.faq__info ol li {
+  list-style: decimal !important;
+}
+
+.faq__info.active {
+  display: block;
+  margin-top: var(--margin-small);
+  max-height: 600px;
+  opacity: 1;
+}
+
+.faq__arrow {
   width: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-out;
+}
+
+.faq__arrow.active {
+  transform: rotate(180deg);
 }
 
 .footer {
@@ -318,8 +402,13 @@
   margin-block: var(--margin-small);
 }
 
+.intro__desc p,
+.intro__desc ul {
+  font-size: inherit;
+}
+
 .intro__elem {
-  font-size: var(--fz-subtitle);
+  font-size: inherit;
   list-style: inside;
 }
 
@@ -526,14 +615,15 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: var(--padding-mini-card);
   max-width: 1200px;
   border-radius: 15px;
   background: var(--bg-gray);
 }
 
-.info__faq p {
-  font-size: var(--fz-subtitle);
+.info__faq p,
+.info__faq span {
+  font-size: inherit;
 }
 
 .info__faq span {
@@ -567,8 +657,4 @@
 .info__name {
   font-size: var(--fz-h2);
   margin-bottom: var(--margin-standard);
-}
-
-.info__elem ul li {
-  list-style: inside;
 }
