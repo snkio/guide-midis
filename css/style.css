@@ -337,7 +337,7 @@
 .faq__info.active {
   display: block;
   margin-top: var(--margin-small);
-  max-height: 1200px;
+  max-height: 12000px;
   opacity: 1;
 }
 
@@ -526,6 +526,10 @@
 
 /* INSTITUTE */
 
+.institute__elem {
+  display: flex;
+}
+
 .institute__title {
   margin-bottom: var(--margin-normal);
 }
@@ -654,4 +658,13 @@
 
 .mobile2-2 {
   margin-left: 45px;
+}
+
+.institute-flex {
+  display: flex;
+  margin-top: 20px;
+}
+
+.institute-info {
+  margin-left: 60px;
 }
