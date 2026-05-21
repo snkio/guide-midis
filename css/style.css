@@ -292,6 +292,10 @@
   text-align: center;
 }
 
+.faq__subtitle {
+  font-size: 1.5rem;
+}
+
 .faq__elem {
   border-bottom: 2px solid var(--bg-gray);
   padding-block: 1.25rem;
@@ -352,7 +356,6 @@
   padding-block: 2.5rem;
   margin-top: var(--margin-standard);
   width: 100%;
-  z-index: 52;
 }
 
 .footer__container {
