@@ -636,3 +636,19 @@
   font-size: var(--fz-h2);
   margin-bottom: var(--margin-standard);
 }
+
+.mobile1 {
+  display: flex;
+}
+
+.mobile1-dop {
+  margin-left: 50px;
+}
+
+.mobile1-3 {
+  margin-left: 80px;
+}
+
+.mobile2-2 {
+  margin-left: 45px;
+}
