@@ -1,105 +1,321 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Словарь студента - Гид первокурсника МИДиС</title>
-</head>
-<body>
+    <meta name="description" content="Словарь студента гид МИДиС" />
+    <meta
+      property="og:title"
+      content="Словарь студента - Гид первокурсника МИДиС"
+    />
+    <meta property="og:description" content="Словарь студента гид МИДиС" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
     <header class="header">
-        <div class="container header__container">
-          <div class="header__logo-sec">
-            <img src="assets/images/logo.png" alt="logo" class="header__logo" />
-            <p class="header__logo-text">
-              Международный Институт Дизайна и Сервиса
-            </p>
-          </div>
-          <ul class="header__list">
-            <li class="header__elem">
-              <a href="index.html" class="header__link">Главная</a>
+      <div class="container header__container">
+        <div class="header__logo-sec">
+          <img src="assets/images/logo.png" alt="logo" class="header__logo" />
+          <p class="header__logo-text">
+            Международный Институт Дизайна и Сервиса
+          </p>
+        </div>
+        <button class="header__burger">&#9776;</button>
+        <ul class="header__list">
+          <li class="header__elem">
+            <a href="index.html" class="header__link">Главная</a>
+          </li>
+          <li class="header__elem">
+            <a
+              href="https://portal.midis.info"
+              class="header__link"
+              target="_blank"
+              >Портал МИДиС</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main default container">
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__elem">
+              <a href="index.html">Главная > </a>
             </li>
-            <li class="header__elem">
-              <a href="#" class="header__link">Портал МИДиС</a>
+            <li class="breadcrumbs__elem">
+              <p>Словарь студента</p>
             </li>
           </ul>
         </div>
-      </header> 
-      <main class="main default container">
-        <div class="breadcrumbs">
-          <div class="container">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__elem">
-                <a href="index.html">Главная > </a>
-              </li>
-              <li class="breadcrumbs__elem">
-                <p>Словарь студента</p>
-              </li>
-            </ul>
-          </div>
+      </div>
+      <div class="intro">
+        <div class="container intro__container">
+          <h1 class="intro__title">Словарь студента</h1>
+          <p class="intro__desc">
+            Первый курс — это время открытий, но иногда кажется, что ты попал в
+            другой мир: сплошные аббревиатуры, непонятные термины и строгие
+            правила. Знакомо? Не переживай! Этот студенческий словарик создан
+            специально для тебя: с его помощью ты быстро освоишься и перестанешь
+            бояться «задавать глупые вопросы».
+          </p>
         </div>
-        <div class="intro">
-          <div class="container intro__container">
-            <h1 class="intro__title">Словарь студента</h1>
-            <p class="intro__desc">
-                Первый курс — это время открытий, но иногда кажется, что ты попал в другой мир: сплошные аббревиатуры, непонятные термины и строгие правила. Знакомо? Не переживай! Этот студенческий словарик создан специально для тебя: с его помощью ты быстро освоишься и перестанешь бояться «задавать глупые вопросы».
-            </p>
-          </div>
-        </div>
-        <div class="letters container">
-            <div class="A">
-                <img src="assets/images/A.png" alt="">
-            </div>
-            <div class="V">
-                <img src="assets/images/V.png" alt="">
-            </div>
-            <div class="D">
-                <img src="assets/images/D.png" alt="">
-            </div>
-            <div class="Z">
-                <img src="assets/images/Z.png" alt="">
-            </div>
-            <div class="I">
-                <img src="assets/images/I.png" alt="">
-            </div>
-            <div class="K">
-                <img src="assets/images/K.png" alt="">
-            </div>
-            <div class="N">
-                <img src="assets/images/N.png" alt="">
-            </div>
-            <div class="P">
-                <img src="assets/images/P.png" alt="">
-            </div>
-            <div class="R">
-                <img src="assets/images/R.png" alt="">
-            </div>
-            <div class="S">
-                <img src="assets/images/S.png" alt="">
-            </div>
-            <div class="Y">
-                <img src="assets/images/Y.png" alt="">
-            </div>
-        </div>
-        </main>
-        <footer class="footer">
-            <div class="container footer__container">
-              <div class="footer__logo-sec">
-                <img src="assets/images/logo.png" alt="logo" class="footer__logo" />
-                <p class="footer__logo-text">
-                  Международный Институт Дизайна и Сервиса
-                </p>
+      </div>
+      <div class="letters">
+        <div class="container letters__container">
+          <div class="letters__elem">
+            <div class="letters__trigger">
+              <div class="letters__text">
+                <p>А</p>
               </div>
-              <p class="footer__authors">
-                <span>Фронтенд:</span><br />
-                Чесноков В.В., Ватутин Е.Д., Меркурьев И.С., Кориненко М.А.,
-                Валиахметова М.А.
-              </p>
-              <p class="footer__teacher">
-                <span>Руководитель проекта:</span> <br />
-                Хаятова Л.Р.
+            </div>
+            <div class="letters__info">
+              <p>
+                Академический отпуск&nbsp;&mdash; это предусмотренная
+                законодательством и&nbsp;уставом иститута временная приостановка
+                обучения, которая предоставляется студенту при наличии
+                объективных, подтверждённых документами обстоятельств
               </p>
             </div>
-          </footer>
-</body>
+          </div>
+          <div class="letters__elem">
+            <div class="letters__trigger">
+              <div class="letters__text">
+                <p>В</p>
+              </div>
+            </div>
+            <div class="letters__info">
+              <ul>
+                <li>
+                  Ведомость&nbsp;&mdash; это список вашей группы, где
+                  преподаватель проставляет оценки по&nbsp;одному предмету.
+                  После сессии оригинал этого документа уходит на&nbsp;хранение
+                  в&nbsp;дирекцию института.
+                </li>
+                <li>
+                  Выпускная квалификационная (дипломная) работа - это итоговый
+                  научно-исследовательский проект, выполняемый студентом на
+                  завершающем этапе обучения. В процессе работы выпускник
+                  проводит системный анализ выбранной темы, применяет полученные
+                  знания на практике и формулирует научно обоснованные выводы,
+                  демонстрируя готовность к профессиональной деятельности.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="letters__elem">
+            <div class="letters__trigger">
+              <div class="letters__text">
+                <p>Д</p>
+              </div>
+            </div>
+            <div class="letters__info">
+              <ul>
+                <li>
+                  Деканат - это административно-управленческое подразделение
+                  института, отвечающее за координацию и организацию учебного
+                  процесса, научно-методической деятельности, а также
+                  воспитательной работы со студентами.
+                </li>
+                <li>
+                  Демонстрационный экзамен  - это форма государственной итоговой
+                  или промежуточной аттестации выпускников, которая направлена
+                  на определение уровня освоения ими материала образовательной
+                  программы и степени сформированности профессиональных
+                  компетенций. Он предполагает выполнение практических заданий в
+                  условиях, максимально приближенных к реальным производственным
+                  процессам.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="letters__elem">
+            <div class="letters__trigger">
+              <div class="letters__text">
+                <p>З</p>
+              </div>
+            </div>
+            <div class="letters__info">
+              <p>
+                Заведующий(ая) кафедрой - руководитель кафедры в университете.
+                Он отвечает за содержание обучения.
+              </p>
+            </div>
+          </div>
+          <div class="letters__elem">
+            <div class="letters__trigger">
+              <div class="letters__text">
+                <p>И</p>
+              </div>
+            </div>
+            <div class="letters__info">
+              <p>
+                Интенсив - трехдневное мероприятие, направленное на совместные
+                тренировки навыков.
+              </p>
+            </div>
+          </div>
+          <div class="letters__elem">
+            <div class="letters__trigger">
+              <div class="letters__text">
+                <p>К</p>
+              </div>
+            </div>
+            <div class="letters__info">
+              <ul>
+                <li>
+                  Коворкинг - это оборудованное пространство для совместной или
+                  индивидуальной работы
+                </li>
+                <li>
+                  Куратор - это твой «наставник» в университете. Он не ставит
+                  оценки, но всегда подскажет, куда обратиться, поможет влиться
+                  в коллектив и поддержит, если возникнут трудности. Обычно у
+                  группы есть один куратор-преподаватель и два куратора-студента
+                  — так поддержка работает ещё эффективнее.
+                </li>
+                <li>
+                  Курсовой проект - это самостоятельная учебно-исследовательская
+                  работа, выполняемая студентом в рамках учебного курса. Цель
+                  проекта — закрепить теоретические знания, развить
+                  профессиональные компетенции и продемонстрировать умение
+                  применять их для решения практических задач.
+                </li>
+                <li>
+                  Курс - ступень высшего или среднего специального образования,
+                  соответствующая одному году обучения.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="letters__elem">
+            <div class="letters__trigger">
+              <div class="letters__text">
+                <p>Н</p>
+              </div>
+            </div>
+            <div class="letters__info">
+              <p>
+                Наставник - это, как правило, два студента, прошедшие
+                специальный отбор и подготовку, которые осуществляют
+                методическое сопровождение и организационную поддержку
+                участников образовательного интенсива, обеспечивая эффективное
+                достижение учебных целей и комфортную атмосферу в команде.
+              </p>
+            </div>
+          </div>
+          <div class="letters__elem">
+            <div class="letters__trigger">
+              <div class="letters__text">
+                <p>П</p>
+              </div>
+            </div>
+            <div class="letters__info">
+              <ul>
+                <li>
+                  Практика - получение практического опыта в своей области
+                  обучения в процессе работы на предприятиях.
+                </li>
+                <li>
+                  Промежуточная аттестация - форма оценивания учебной
+                  успеваемости студента за половину семестра.
+                </li>
+                <li>
+                  Проректор - заместитель ректора, ответственный за определенный
+                  узкий круг задач в управлении университетом.
+                </li>
+                <li>
+                  Пара - базовая единица учебного времени, состоящая из 90
+                  академических минут и предназначенная для проведения одного
+                  занятия.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="letters__elem">
+            <div class="letters__trigger">
+              <div class="letters__text">
+                <p>Р</p>
+              </div>
+            </div>
+            <div class="letters__info">
+              <p>Ректор - руководитель высшего учебного заведения.</p>
+            </div>
+          </div>
+          <div class="letters__elem">
+            <div class="letters__trigger">
+              <div class="letters__text">
+                <p>С</p>
+              </div>
+            </div>
+            <div class="letters__info">
+              <ul>
+                <li>
+                  Семестр - учебное полугодие, выступающее основной единицей
+                  деления академического года. Как правило, один курс обучения
+                  включает два таких периода длительностью по 4–5 месяцев
+                  каждый.
+                </li>
+                <li>
+                  Сессия - период времени, в течение которого студент сдает
+                  экзамены по предметам и знаниям, полученным в течение
+                  семестра. Обычно сессия длится около недели.
+                </li>
+                <li>
+                  Староста - выбранный внутри группы студент-лидер, который
+                  следит за порядком, отмечает посещаемость и передает важную
+                  информацию от преподавателей своим одногруппникам.
+                </li>
+                <li>
+                  Студенческий пропуск - персональная карта доступа, необходимая
+                  для прохода через систему контроля учебного заведения.
+                </li>
+                <li>
+                  Учебная практика - вид практической подготовки,
+                  ориентированный на формирование базовых профессиональных
+                  компетенций и приобретение первого опыта профильной
+                  деятельности
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="letters__elem">
+            <div class="letters__trigger">
+              <div class="letters__text">
+                <p>У</p>
+              </div>
+            </div>
+            <div class="letters__info">
+              <p>
+                Учебная практика - вид практической подготовки, ориентированный
+                на формирование базовых профессиональных компетенций и
+                приобретение первого опыта профильной деятельности
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo-sec">
+          <img src="assets/images/logo.png" alt="logo" class="footer__logo" />
+          <p class="footer__logo-text">
+            Международный Институт Дизайна и Сервиса
+          </p>
+        </div>
+        <p class="footer__authors">
+          <span>Фронтенд:</span><br />
+          Чесноков В.В., Ватутин Е.Д., Меркурьев И.С., Кориненко М.А.,
+          Валиахметова М.А.
+        </p>
+        <p class="footer__teacher">
+          <span>Руководитель проекта:</span> <br />
+          Хаятова Л.Р.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
