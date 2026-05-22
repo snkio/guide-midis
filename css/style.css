@@ -617,11 +617,13 @@
   max-width: 1200px;
   border-radius: 15px;
   background: var(--bg-gray);
+  text-align: center;
 }
 
 .info__faq p,
 .info__faq span {
   font-size: inherit;
+  margin-right: 30px;
 }
 
 .info__faq span {
