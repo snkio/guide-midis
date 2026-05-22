@@ -1,11 +1,18 @@
+const burger = document.querySelector(".header__burger");
 const trigger = document.querySelectorAll(".faq__trigger");
-const lettersTrigger = document.querySelectorAll('.letters__trigger')
-const burger = document.querySelector('.header__burger')
-const burgerList = document.querySelector('.header__list')
+const lettersTrigger = document.querySelectorAll(".letters__trigger");
+const burgerLinks = document.querySelectorAll(".header__elem");
+const burgerList = document.querySelector(".header__list");
 
-burger.addEventListener('click', () => {
-  burgerList.classList.toggle('active')
-})
+burger.addEventListener("click", () => {
+  burgerList.classList.toggle("active");
+});
+
+burgerLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    burgerList.classList.remove("active");
+  });
+});
 
 trigger.forEach((trigger) => {
   trigger.addEventListener("click", () => {
@@ -23,9 +30,9 @@ trigger.forEach((trigger) => {
   });
 });
 
-lettersTrigger.forEach((trigger) => {
-  trigger.addEventListener("click", () => {
-    const infoBlock = trigger.nextElementSibling;
+lettersTrigger.forEach((lTrigger) => {
+  lTrigger.addEventListener("click", () => {
+    const infoBlock = lTrigger.nextElementSibling;
     if (infoBlock) {
       if (infoBlock.textContent === "") {
         console.log("В разделе нет информации");
@@ -35,5 +42,3 @@ lettersTrigger.forEach((trigger) => {
     }
   });
 });
-
-

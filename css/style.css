@@ -313,6 +313,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .faq__info {
@@ -478,6 +479,11 @@
   color: var(--bg-orange);
 }
 
+.info__teacher a {
+  color: var(--bg-orange);
+  font-weight: var(--fw-semibold);
+}
+
 .schedule__btns {
   display: flex;
   justify-content: space-between;
@@ -614,7 +620,7 @@
   padding: var(--padding-mini-card);
   max-width: 1200px;
   border-radius: 15px;
-  background: var(--bg-gray);
+  background: #eee;
   text-align: center;
 }
 
@@ -677,6 +683,10 @@
   padding-block: 0.5rem;
 }
 
+.letters__trigger {
+  cursor: pointer;
+}
+
 .letters__text {
   font-size: var(--fz-h2);
   color: var(--bg-orange);
@@ -696,6 +706,10 @@
     max-height 0.3s ease-out,
     margin-top 0.3s ease-out,
     opacity 0.3s ease-out;
+}
+
+.letters__info span {
+  font-weight: var(--fw-semibold);
 }
 
 .letters__info li {
