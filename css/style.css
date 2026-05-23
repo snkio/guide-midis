@@ -779,6 +779,10 @@
     font-size: 1.2rem;
   }
 
+ .header__logo-text {
+    display: none;
+  }
+
   .footer__logo-text {
     display: none;
   }
