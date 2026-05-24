@@ -723,6 +723,11 @@
   opacity: 1;
 }
 
+.orange__text {
+  color: #FC4C00;
+  font-weight: 600;
+}
+
 @media (max-width: 768px) {
   .container {
     padding-inline: 1rem;
