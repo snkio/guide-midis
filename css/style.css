@@ -718,7 +718,7 @@
 
 .info__flex {
   display: flex;
-  flex-wrarp: wrap;
+  flex-wrap: wrap;
 }
 
 .info__flex img {
