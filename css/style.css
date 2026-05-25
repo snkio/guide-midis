@@ -740,6 +740,11 @@
   gap: 1rem;
 }
 
+.mobile1 img,
+.mobile2 img {
+  width: 100%;
+}
+
 .mobile1-3 {
   margin-left: 1rem;
 }
@@ -869,6 +874,10 @@
 
 @media (max-width: 425px) {
   .hero__title {
+    font-size: 2rem;
+  }
+
+  .intro__title {
     font-size: 2rem;
   }
 
