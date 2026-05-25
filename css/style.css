@@ -436,6 +436,14 @@
   width: 100%;
 }
 
+.footer__istitute {
+  margin-top: 163px;
+}
+
+.footer_firstdays {
+  margin-top: 193px;
+}
+
 .footer__container {
   display: flex;
   flex-wrap: wrap;
