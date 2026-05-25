@@ -623,8 +623,8 @@
   margin-bottom: var(--margin-normal);
 }
 
-.institute__info {
-  font-size: var(--fz-subtitle);
+.institute-info {
+  max-width: 800px;
 }
 
 .institute__job,
