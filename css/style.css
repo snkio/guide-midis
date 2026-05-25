@@ -607,6 +607,8 @@
 
 .institute__elem {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: var(--margin-small);
 }
 
 .institute__title {
@@ -632,11 +634,6 @@
   margin-right: var(--margin-normal);
 }
 
-.institute-flex {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
 /* RULES */
 
 .info__rules {
