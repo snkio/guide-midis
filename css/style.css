@@ -718,6 +718,7 @@
 
 .info__flex {
   display: flex;
+  flex-wrarp: wrap;
 }
 
 .info__flex img {
