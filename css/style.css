@@ -415,7 +415,7 @@
 .faq__info.active {
   display: block;
   margin-top: var(--margin-small);
-  max-height: 3000px;
+  max-height: 6000px;
   opacity: 1;
 }
 
