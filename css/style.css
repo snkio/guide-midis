@@ -599,6 +599,10 @@
   gap: 30px;
 }
 
+.schedule__flex img {
+  width: 100%;
+}
+
 /* INSTITUTE */
 
 .institute__elem {
