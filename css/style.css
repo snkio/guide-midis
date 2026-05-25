@@ -751,6 +751,7 @@
 .mobile1 img,
 .mobile2 img {
   width: 100%;
+  max-width: 400px;
 }
 
 .mobile1-3 {
