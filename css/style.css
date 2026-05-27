@@ -436,14 +436,6 @@
   width: 100%;
 }
 
-.footer__istitute {
-  margin-top: 163px;
-}
-
-.footer_firstdays {
-  margin-top: 193px;
-}
-
 .footer__container {
   display: flex;
   flex-wrap: wrap;
@@ -603,12 +595,16 @@
 
 .schedule__flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  width: 100%;
 }
 
 .schedule__flex img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-width: 0;
 }
 
 /* INSTITUTE */
@@ -832,6 +828,26 @@
     display: none;
   }
 
+  .header__link:hover {
+    opacity: 1;
+  }
+
+  .header__link:hover::after {
+    width: 0;
+  }
+
+  .start__card:hover {
+    transform: scale(1);
+  }
+
+  .learn__element:hover .learn__img {
+    transform: scale(1);
+  }
+
+  .schedule__btn:hover {
+    transform: scale(1.1);
+  }
+
   .hero__title {
     font-size: 2.5rem;
   }
@@ -886,6 +902,10 @@
 }
 
 @media (max-width: 425px) {
+  .header__logo-text {
+    display: none;
+  }
+
   .hero__title {
     font-size: 2rem;
   }
@@ -898,14 +918,6 @@
     font-size: 1.3rem;
   }
 
-  .header__logo-text {
-    display: none;
-  }
-
-  .footer__logo-text {
-    display: none;
-  }
-
   .start__list {
     justify-content: center;
   }
@@ -916,6 +928,25 @@
   }
 
   .institute-info {
-    margin-bottom: 30px;
+    margin-bottom: var(--margin-normal);
+  }
+
+  .institute-img img {
+    margin: 0;
+  }
+
+  .footer__logo,
+  .footer__authors {
+    margin-bottom: var(--margin-small);
+  }
+
+  .footer__logo-text {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .learn__text {
+    font-size: 1rem;
   }
 }

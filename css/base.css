@@ -6,10 +6,21 @@
   padding: 0;
 }
 
+html,
 body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   font-family: var(--ff-main);
   line-height: var(--main-line-height);
   color: var(--text-black);
+}
+
+main {
+  flex-grow: 1;
 }
 
 p,
