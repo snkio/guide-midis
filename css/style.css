@@ -879,6 +879,10 @@
   .learn__list {
     justify-content: center;
   }
+
+  .institute-info {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -904,5 +908,14 @@
 
   .start__list {
     justify-content: center;
+  }
+
+  .institute__name {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .institute-info {
+    margin-bottom: 30px;
   }
 }
