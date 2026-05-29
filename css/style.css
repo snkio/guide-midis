@@ -629,6 +629,10 @@
 }
 
 .institute__name {
+  font-weight: var(--fw-semibold);
+}
+
+.institute__job {
   margin-bottom: var(--margin-normal);
 }
 
