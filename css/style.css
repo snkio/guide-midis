@@ -369,10 +369,6 @@
   text-align: center;
 }
 
-.faq__subtitle {
-  font-size: 1.5rem;
-}
-
 .faq__elem {
   border-bottom: 2px solid var(--bg-gray);
   padding-block: 1.25rem;
@@ -615,11 +611,7 @@
   margin-top: var(--margin-small);
 }
 
-.institute__title {
-  margin-bottom: var(--margin-normal);
-}
-
-.institute-info {
+.institute__info {
   max-width: 800px;
 }
 
@@ -900,7 +892,7 @@
     justify-content: center;
   }
 
-  .institute-info {
+  .institute__info {
     max-width: 400px;
   }
 }
@@ -931,7 +923,7 @@
     padding: 0;
   }
 
-  .institute-info {
+  .institute__info {
     margin-bottom: var(--margin-normal);
   }
 
