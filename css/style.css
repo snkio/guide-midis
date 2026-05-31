@@ -464,6 +464,7 @@
 
 .breadcrumbs {
   margin-top: 50px;
+  font-size: 40px !important;
 }
 
 .breadcrumbs li a {
@@ -473,7 +474,9 @@
 
 .breadcrumbs__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
+  align-items: center;
   margin-bottom: var(--margin-normal);
 }
 
@@ -632,6 +635,7 @@
   border-radius: 15px;
   max-width: 300px;
   margin-right: var(--margin-normal);
+  width: 100%;
 }
 
 /* RULES */
@@ -723,6 +727,7 @@
   border-radius: 15px;
   max-width: 300px;
   margin-right: var(--margin-normal);
+  width: 100%;
 }
 
 .info__reset {
@@ -731,7 +736,7 @@
 
 .info__name {
   font-size: var(--fz-h2);
-  margin-bottom: var(--margin-standard);
+  margin-bottom: var(--margin-normal);
 }
 
 .mobile1 {
@@ -938,6 +943,10 @@
 
   .footer__logo-text {
     display: none;
+  }
+
+  .info__faq {
+    font-size: 1rem;
   }
 }
 
