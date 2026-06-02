@@ -3,3 +3,4 @@
 `/css/` - for styling
 `/js/` - for logic
 `/assets/images/` - for images
+`/assets/fonts` - for fonts
