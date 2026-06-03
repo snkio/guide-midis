@@ -1,6 +1,8 @@
 # Guide MIDIS
 
-`/css/` - for styling
-`/js/` - for logic
-`/assets/images/` - for images
-`/assets/fonts` - for fonts
+Guide for students MIDIS
+
+- `/assets/images/` - for images
+- `/assets/fonts/` - for fonts
+- `/css/` - for styling
+- `/js/` - for logic
