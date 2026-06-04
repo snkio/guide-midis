@@ -303,8 +303,8 @@
   transition: transform 0.3s ease-out;
 }
 
-.start__card:hover {
-  transform: scale(1.1);
+[data-anim].show.start__card:hover {
+  transform: scale(1.05);
 }
 
 .start__img {
@@ -321,7 +321,6 @@
 .learn__list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -332,10 +331,6 @@
   border-radius: 40px;
   box-shadow: 0 5px 5px rgba(48, 48, 48, 0.4);
   margin-bottom: 1rem;
-}
-
-.learn__element:last-child {
-  margin-bottom: 0;
 }
 
 .learn__img {
@@ -478,6 +473,10 @@
   gap: 5px;
   align-items: center;
   margin-bottom: var(--margin-normal);
+}
+
+.intro__container {
+  animation: fadeInUp 0.4s ease-out forwards;
 }
 
 .intro__desc {
@@ -810,6 +809,66 @@
   color: #fc4c00;
   font-weight: 600;
 }
+
+/* ===== ANIM ===== */
+[data-anim] {
+  transition:
+    opacity 0.4s ease-out,
+    transform 0.4s ease-out;
+  will-change: transform, opacity;
+}
+
+[data-anim].show {
+  opacity: 1;
+  transform: none;
+}
+
+.fade__in {
+  opacity: 0;
+}
+
+.fade__in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+.fade__in-right {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+.fade__in-scale {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.fade__in-up {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ================ */
 
 @media (max-width: 1440px) {
   .container {
