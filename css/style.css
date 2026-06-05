@@ -571,8 +571,8 @@
   transition: transform 0.3s ease-out;
 }
 
-.schedule__btn:hover {
-  transform: scale(1.1);
+[data-anim].show.schedule__btn:hover {
+  transform: scale(1.05);
 }
 
 .schedule__time-img {
@@ -896,7 +896,7 @@
     width: 0;
   }
 
-  .start__card:hover {
+  [data-anim].show.start__card:hover {
     transform: scale(1);
   }
 
@@ -904,8 +904,8 @@
     transform: scale(1);
   }
 
-  .schedule__btn:hover {
-    transform: scale(1.1);
+  [data-anim].show.schedule__btn:hover {
+    transform: scale(1);
   }
 
   .hero__title {
