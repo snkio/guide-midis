@@ -89,6 +89,11 @@
   align-items: center;
 }
 
+.header__logo,
+.footer__logo {
+  max-width: 10rem;
+}
+
 .header__logo-sec {
   display: flex;
   align-items: center;
