@@ -91,7 +91,8 @@
 
 .header__logo,
 .footer__logo {
-  max-width: 10rem;
+  width: 10rem;
+  max-width: 100%;
 }
 
 .header__logo-sec {
