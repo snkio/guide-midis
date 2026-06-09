@@ -886,6 +886,18 @@
   .hero__mascot {
     display: none;
   }
+
+  .learn__list {
+    justify-content: center;
+  }
+
+  .start__list {
+    justify-content: center;
+  }
+
+  .schedule__btns {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -956,10 +968,6 @@
     display: block;
     position: absolute;
     right: 16px;
-  }
-
-  .learn__list {
-    justify-content: center;
   }
 
   .institute__info {
