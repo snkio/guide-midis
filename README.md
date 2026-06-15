@@ -10,7 +10,7 @@
 
 ---
 
-Guide for students MIDIS
+Guide for First-Year Students
 
 ## 🛠️ Built With:
 
