@@ -1,5 +1,113 @@
-@import "./root.css";
-@import "./base.css";
+/* ========== ROOT ========== */
+
+:root {
+  --main-line-height: 1.5;
+  --h-line-height: 1.2;
+  --text-black: #303030;
+  --text-white: #fffafa;
+
+  --bg-header: rgba(204, 204, 204, 0.8);
+  --bg-orange: #fc4c00;
+  --bg-orange-hover: #e04300;
+  --bg-brown: #ca470e;
+  --bg-brown-hover: #e65213;
+  --bg-text-orange: #fd9040;
+  --bg-orange-schedule: #ff792f;
+  --bg-gray: #d9d9d9;
+
+  --fz-main: 1rem;
+  --fz-subtitle: 1.25rem;
+  --fz-h1: 2.5rem;
+  --fz-h2: 1.5rem;
+  --fz-h3: 1.25rem;
+  --fz-card: 1.5rem;
+
+  --ff-main: "Montserrat", sans-serif;
+  --ff-other: "Tektur", sans-serif;
+
+  --fw-regular: 400; /* Regular */
+  --fw-medium: 500; /* Medium */
+  --fw-semibold: 600; /* Semi-bold */
+  --fw-bold: 700; /* Bold */
+
+  --br40: 40%;
+  --br80: 80%;
+
+  --padding-default: 1.5rem;
+  --padding-schedule: 2rem;
+  --padding-mini-card: 3.5rem;
+  --margin-small: 1rem;
+  --margin-normal: 2rem;
+  --margin-standard: 3rem;
+}
+
+/* ========== BASE ========== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--ff-main);
+  line-height: var(--main-line-height);
+  color: var(--text-black);
+}
+
+main {
+  flex-grow: 1;
+}
+
+p,
+ol,
+ul,
+li {
+  font-size: var(--fz-main);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1 {
+  font-size: var(--fz-h1);
+}
+
+h2 {
+  font-size: var(--fz-h2);
+}
+
+h3 {
+  font-size: var(--fz-h3);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: var(--h-line-height);
+}
+
+.default {
+  padding-top: 128px;
+}
+
+/* ========== FONTS ========== */
 
 @font-face {
   font-display: swap;
@@ -817,6 +925,7 @@
 }
 
 /* ===== ANIM ===== */
+
 [data-anim] {
   transition:
     opacity 0.4s ease-out,
