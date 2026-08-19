@@ -5,12 +5,14 @@ const burgerLinks = document.querySelectorAll(".header__elem");
 const burgerList = document.querySelector(".header__list");
 
 burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
   burgerList.classList.toggle("active");
 });
 
 burgerLinks.forEach((link) => {
   link.addEventListener("click", () => {
     burgerList.classList.remove("active");
+    burger.classList.remove("active");
   });
 });
 
