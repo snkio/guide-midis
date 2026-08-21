@@ -20,7 +20,7 @@
   --fz-h1: 2.5rem;
   --fz-h2: 1.5rem;
   --fz-h3: 1.25rem;
-  --fz-card: 1.5rem;
+  --fz-card: 1.15rem;
 
   --ff-main: "Montserrat", sans-serif;
   --ff-other: "Tektur", sans-serif;
@@ -29,9 +29,6 @@
   --fw-medium: 500; /* Medium */
   --fw-semibold: 600; /* Semi-bold */
   --fw-bold: 700; /* Bold */
-
-  --br40: 40%;
-  --br80: 80%;
 
   --padding-default: 1.5rem;
   --padding-schedule: 2rem;
@@ -59,6 +56,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  font-size: var(--fz-main);
   font-family: var(--ff-main);
   line-height: var(--main-line-height);
   color: var(--text-black);
@@ -66,13 +64,6 @@ body {
 
 main {
   flex-grow: 1;
-}
-
-p,
-ol,
-ul,
-li {
-  font-size: var(--fz-main);
 }
 
 a {
@@ -571,7 +562,6 @@ h4 {
 
 .breadcrumbs {
   margin-top: 50px;
-  font-size: 40px !important;
 }
 
 .breadcrumbs li a {
@@ -582,9 +572,20 @@ h4 {
 .breadcrumbs__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
   align-items: center;
   margin-bottom: var(--margin-normal);
+  gap: 5px;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: var(--bg-orange);
+  vertical-align: middle;
+  margin: 0 5px;
+  border-radius: 50%;
 }
 
 .intro__container {
@@ -723,6 +724,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   margin-top: var(--margin-small);
+  gap: 2rem;
 }
 
 .institute__info {
@@ -745,7 +747,6 @@ h4 {
 .institute__elem img {
   border-radius: 15px;
   max-width: 300px;
-  margin-right: var(--margin-normal);
   width: 100%;
 }
 
@@ -1055,7 +1056,6 @@ h4 {
     top: 100%;
     left: 0;
     gap: 1rem;
-    font-size: 2rem;
     transform: translateY(-15px);
     transition:
       visibility 0.3s ease-out,
