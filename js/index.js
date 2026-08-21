@@ -16,31 +16,23 @@ burgerLinks.forEach((link) => {
   });
 });
 
+function checker(trigger) {
+  const infoBlock = trigger.nextElementSibling;
+
+  if (infoBlock.textContent === "") return;
+
+  infoBlock.classList.toggle("active");
+}
+
 trigger.forEach((trigger) => {
   trigger.addEventListener("click", () => {
-    const infoBlock = trigger.nextElementSibling;
-    if (infoBlock) {
-      if (infoBlock.textContent === "") {
-        console.log("В разделе нет информации");
-      } else {
-        infoBlock.classList.toggle("active");
-
-        const currentArrow = trigger.querySelector(".faq__arrow");
-        currentArrow.classList.toggle("active");
-      }
-    }
+    checker(trigger);
+    console.log("Вызван триггер");
+    const currentArrow = trigger.querySelector(".faq__arrow");
+    currentArrow.classList.toggle("active");
   });
 });
 
 lettersTrigger.forEach((lTrigger) => {
-  lTrigger.addEventListener("click", () => {
-    const infoBlock = lTrigger.nextElementSibling;
-    if (infoBlock) {
-      if (infoBlock.textContent === "") {
-        console.log("В разделе нет информации");
-      } else {
-        infoBlock.classList.toggle("active");
-      }
-    }
-  });
+  lTrigger.addEventListener("click", () => checker(lTrigger));
 });
