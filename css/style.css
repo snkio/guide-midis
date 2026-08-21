@@ -175,7 +175,6 @@ h4 {
 }
 
 .header {
-  position: relative;
   background: var(--bg-header);
   padding-block: 2.5rem;
   position: fixed;
@@ -197,8 +196,8 @@ h4 {
 
 .header__logo,
 .footer__logo {
-  width: 10rem;
-  max-width: 100%;
+  height: 30px;
+  width: auto;
 }
 
 .header__logo-sec {
@@ -210,6 +209,7 @@ h4 {
 
 .header__logo-text {
   font-weight: var(--fw-semibold);
+  font-size: 15px;
 }
 
 .header__list {
@@ -553,6 +553,7 @@ h4 {
 }
 
 .footer__logo-text {
+  font-size: 15px;
   font-weight: var(--fw-semibold);
 }
 
@@ -741,7 +742,7 @@ h4 {
   margin-bottom: var(--margin-normal);
 }
 
-.institute-img img {
+.institute__elem img {
   border-radius: 15px;
   max-width: 300px;
   margin-right: var(--margin-normal);
